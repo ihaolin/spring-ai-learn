@@ -1,0 +1,22 @@
+server:
+  port: 8844
+
+spring:
+  application:
+    name: spring-ai-learn
+  ai:
+    openai:
+      api-key: your-api-key
+      chat:
+        options:
+          model: gpt-4o-mini
+          temperature: 0.4
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
